@@ -1,0 +1,5 @@
+description: Web development packages
+
+packages:
+  - nodejs
+  - npm

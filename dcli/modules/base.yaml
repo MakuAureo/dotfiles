@@ -1,0 +1,62 @@
+# Base packages installed on all systems
+# These packages are included regardless of host or modules
+
+description: Base system packages
+
+packages:
+  # Essential base system
+  - base
+  - base-devel
+
+  # Kernel (uncomment the one you use)
+  - linux              # Standard kernel
+  # - linux-zen          # Zen kernel (optimized for desktop)
+  # - linux-lts          # Long-term support kernel
+  # - linux-hardened     # Security-focused kernel
+
+  # Firmware (usually needed)
+  - linux-firmware
+  - sof-firmware       # Audio
+
+  # AMD Drivers
+  - amd-ucode
+  - vulkan-radeon
+  - xf86-video-amdgpu
+  - xf86-video-ati
+
+  # Boot
+  - efibootmgr
+  - mkinitcpio
+  - plymouth
+
+  # Basic tools
+  - 7zip
+  - bluez
+  - bluez-utils
+  - btop
+  - ffmpeg
+  - flatpak
+  - git
+  - gst-plugin-pipewire
+  - iwd
+  - libpulse
+  - openssh
+  - pipewire
+  - pipewire-alsa
+  - pipewire-jack
+  - pipewire-pulse
+  - polkit-kde-agent
+  - power-profiles-daemon
+  - smartmontools
+  - sudo
+  - unixodbc
+  - ufw
+  - uwsm
+  - wget
+  - wireplumber
+  - zram-generator
+
+  # dcli dependencies
+  - yay          # AUR helper (required for AUR package management)
+  - fzf          # Fuzzy finder (required for dcli search/module/backup TUI)
+  - timeshift    # System backup tool (required for dcli backup commands)

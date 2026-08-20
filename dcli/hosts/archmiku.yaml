@@ -1,0 +1,65 @@
+host: archmiku
+description: Laptop
+
+module_processing: parallel
+enabled_modules:
+  - base
+  - fonts
+  - hyprland
+  - neovim
+  - webdev
+
+packages:
+  - qbittorrent
+  - bear
+  - brightnessctl
+  - unzip
+  - feh
+  - nulloy
+  - vlc
+  - vlc-plugins-all
+  - fish
+  - flatpak:com.github.tchx84.Flatseal
+  - flatpak:com.github.PintaProject.Pinta
+  - flatpak:com.discordapp.Discord
+  - flatpak:com.interversehq.qView
+  - flatpak:com.heroicgameslauncher.hgl
+
+flatpak_scope: user
+auto_prune: false
+
+strict_package_order: false
+config_backups:
+  enabled: true
+  max_backups: 5
+
+system_backups:
+  enabled: true
+  backup_on_sync: true
+  backup_on_update: true
+  tool: timeshift
+  snapper_config: root
+  max_backups: 5
+
+services:
+  enabled:
+    - bluetooth
+    - getty@
+    - iwd
+    - power-profiles-daemon
+    - sshd
+    - systemd-network-generator
+    - systemd-networkd-wait-online
+    - ufw
+
+default_apps:
+  scope: system
+  browser: null
+  text_editor: nvim
+  file_manager: thunar
+  terminal: kitty
+  video_player: vlc
+  audio_player: nulloy
+  image_viewer: feh
+
+aur_helper: yay

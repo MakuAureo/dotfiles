@@ -1,0 +1,19 @@
+description: Desktop packages (hyprland)
+
+packages:
+  - quickshell
+  - thunar
+  - dunst
+  - grim
+  - hyprland
+  - hyprlauncher
+  - hyprpaper
+  - kitty
+  - qt5-wayland
+  - qt6-wayland
+  - sddm
+  - slurp
+  - upower
+  - xdg-desktop-portal-hyprland
+  - xdg-utils
+  - flatpak:app.zen_browser.zen

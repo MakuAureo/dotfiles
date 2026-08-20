@@ -1,0 +1,32 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
+SETUVAR _fisher_miniex_2F_fish_2D_theme_2D_damin_files:\x7e/\x2econfig/fish/functions/_damin_aws_region_for\x2efish\x1e\x7e/\x2econfig/fish/functions/_damin_aws_render\x2efish\x1e\x7e/\x2econfig/fish/functions/_damin_azure_compute\x2efish\x1e\x7e/\x2econfig/fish/functions/_damin_azure_render\x2efish\x1e\x7e/\x2econfig/fish/functions/_damin_battery_render\x2efish\x1e\x7e/\x2econfig/fish/functions/_damin_date_render\x2efish\x1e\x7e/\x2econfig/fish/functions/_damin_default_of\x2efish\x1e\x7e/\x2econfig/fish/functions/_damin_defaults\x2efish\x1e\x7e/\x2econfig/fish/functions/_damin_devops_render\x2efish\x1e\x7e/\x2econfig/fish/functions/_damin_devops_resolve\x2efish\x1e\x7e/\x2econfig/fish/functions/_damin_fossil_render\x2efish\x1e\x7e/\x2econfig/fish/functions/_damin_gcp_render\x2efish\x1e\x7e/\x2econfig/fish/functions/_damin_help_block\x2efish\x1e\x7e/\x2econfig/fish/functions/_damin_hg_render\x2efish\x1e\x7e/\x2econfig/fish/functions/_damin_jj_compute\x2efish\x1e\x7e/\x2econfig/fish/functions/_damin_jj_render\x2efish\x1e\x7e/\x2econfig/fish/functions/_damin_k8s_compute\x2efish\x1e\x7e/\x2econfig/fish/functions/_damin_k8s_config_path\x2efish\x1e\x7e/\x2econfig/fish/functions/_damin_k8s_prefill\x2efish\x1e\x7e/\x2econfig/fish/functions/_damin_k8s_render\x2efish\x1e\x7e/\x2econfig/fish/functions/_damin_lang_global\x2efish\x1e\x7e/\x2econfig/fish/functions/_damin_palette_accents\x2efish\x1e\x7e/\x2econfig/fish/functions/_damin_palette_data\x2efish\x1e\x7e/\x2econfig/fish/functions/_damin_palette_list\x2efish\x1e\x7e/\x2econfig/fish/functions/_damin_palette_meta\x2efish\x1e\x7e/\x2econfig/fish/functions/_damin_palette_row\x2efish\x1e\x7e/\x2econfig/fish/functions/_damin_palette_table\x2efish\x1e\x7e/\x2econfig/fish/functions/_damin_profile_now_ms\x2efish\x1e\x7e/\x2econfig/fish/functions/_damin_pulumi_stack_for\x2efish\x1e\x7e/\x2econfig/fish/functions/damin_async_refresh\x2efish\x1e\x7e/\x2econfig/fish/functions/damin_async_value\x2efish\x1e\x7e/\x2econfig/fish/functions/damin_bench\x2efish\x1e\x7e/\x2econfig/fish/functions/damin_config\x2efish\x1e\x7e/\x2econfig/fish/functions/damin_doctor\x2efish\x1e\x7e/\x2econfig/fish/functions/damin_help\x2efish\x1e\x7e/\x2econfig/fish/functions/damin_install_themes\x2efish\x1e\x7e/\x2econfig/fish/functions/damin_palette_preview\x2efish\x1e\x7e/\x2econfig/fish/functions/damin_profile\x2efish\x1e\x7e/\x2econfig/fish/functions/damin_reset_cache\x2efish\x1e\x7e/\x2econfig/fish/functions/damin_set_palette\x2efish\x1e\x7e/\x2econfig/fish/functions/damin_uninstall_themes\x2efish\x1e\x7e/\x2econfig/fish/functions/fish_title\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/_damin_async_core\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/damin\x2efish\x1e\x7e/\x2econfig/fish/completions/damin_bench\x2efish\x1e\x7e/\x2econfig/fish/completions/damin_config\x2efish\x1e\x7e/\x2econfig/fish/completions/damin_doctor\x2efish\x1e\x7e/\x2econfig/fish/completions/damin_help\x2efish\x1e\x7e/\x2econfig/fish/completions/damin_install_themes\x2efish\x1e\x7e/\x2econfig/fish/completions/damin_palette_preview\x2efish\x1e\x7e/\x2econfig/fish/completions/damin_profile\x2efish\x1e\x7e/\x2econfig/fish/completions/damin_reset_cache\x2efish\x1e\x7e/\x2econfig/fish/completions/damin_set_palette\x2efish\x1e\x7e/\x2econfig/fish/completions/damin_uninstall_themes\x2efish
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1eminiex/fish\x2dtheme\x2ddamin
+SETUVAR _fisher_upgraded_to_4_4:\x1d
+SETUVAR fish_color_autosuggestion:6c7086
+SETUVAR fish_color_cancel:f38ba8
+SETUVAR fish_color_command:89b4fa
+SETUVAR fish_color_comment:7f849c
+SETUVAR fish_color_cwd:f9e2af
+SETUVAR fish_color_end:fab387
+SETUVAR fish_color_error:f38ba8
+SETUVAR fish_color_escape:eba0ac
+SETUVAR fish_color_gray:6c7086
+SETUVAR fish_color_host:89b4fa
+SETUVAR fish_color_host_remote:a6e3a1
+SETUVAR fish_color_keyword:cba6f7
+SETUVAR fish_color_normal:cdd6f4
+SETUVAR fish_color_operator:f5c2e7
+SETUVAR fish_color_option:a6e3a1
+SETUVAR fish_color_param:f2cdcd
+SETUVAR fish_color_quote:a6e3a1
+SETUVAR fish_color_redirection:f5c2e7
+SETUVAR fish_color_search_match:\x2d\x2dbackground\x3d313244
+SETUVAR fish_color_selection:\x2d\x2dbackground\x3d313244
+SETUVAR fish_color_status:f38ba8
+SETUVAR fish_color_user:94e2d5
+SETUVAR fish_pager_color_completion:cdd6f4
+SETUVAR fish_pager_color_description:6c7086
+SETUVAR fish_pager_color_prefix:f5c2e7
+SETUVAR fish_pager_color_progress:6c7086

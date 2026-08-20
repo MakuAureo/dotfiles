@@ -1,0 +1,52 @@
+---@param init_result ClangdInitializeResult
+return {
+  cmd = function(dispatchers, config)
+    local cmd = 'biome'
+    if (config or {}).root_dir then
+      local local_cmd = vim.fs.joinpath(config.root_dir, 'node_modules/.bin', cmd)
+      if vim.fn.executable(local_cmd) == 1 then
+        cmd = local_cmd
+      end
+    end
+    return vim.lsp.rpc.start({ cmd, 'lsp-proxy' }, dispatchers)
+  end,
+  filetypes = {
+    'astro',
+    'css',
+    'graphql',
+    'html',
+    'javascript',
+    'javascriptreact',
+    'json',
+    'jsonc',
+    'svelte',
+    'typescript',
+    'typescriptreact',
+    'vue',
+  },
+  workspace_required = true,
+  root_dir = function(bufnr, on_dir)
+    -- The project root is where the LSP can be started from
+    -- As stated in the documentation above, this LSP supports monorepos and simple projects.
+    -- We select then from the project root, which is identified by the presence of a package
+    -- manager lock file.
+    local root_markers = {
+      'package-lock.json',
+      'yarn.lock',
+      'pnpm-lock.yaml',
+      'bun.lockb',
+      'bun.lock',
+      'deno.lock',
+    }
+    -- Set a lower priority to avoid spawning multiple servers on monorepos
+    local biome_config_files = { 'biome.json', 'biome.jsonc' }
+    -- Give the root markers equal priority by wrapping them in a table
+    root_markers = vim.fn.has('nvim-0.11.3') == 1 and { root_markers, biome_config_files, { '.git' } }
+      or vim.list_extend(root_markers, vim.list_extend(biome_config_files, { '.git' }))
+
+    -- We fallback to the current working directory if no project root is found
+    local project_root = vim.fs.root(bufnr, root_markers) or vim.fn.getcwd()
+
+    on_dir(project_root)
+  end,
+}

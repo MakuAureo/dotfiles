@@ -1,0 +1,11 @@
+description: Neovim packages
+
+packages:
+  - neovim
+  - tree-sitter-cli
+
+  - biome
+  - clang
+  - lua-language-server
+  - qt6-declarative
+  - gopls
