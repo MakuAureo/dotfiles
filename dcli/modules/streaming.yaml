@@ -1,4 +1,5 @@
 description: Streaming packages
 
 packages:
+  - easyeffects
   - flatpak:com.obsproject.Studio

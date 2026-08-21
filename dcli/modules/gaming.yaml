@@ -5,3 +5,8 @@ packages:
   - steam
   - flatpak:com.discordapp.Discord
   - flatpak:com.heroicgameslauncher.hgl
+
+update_hooks:
+  post_update: "scripts/vencord-install.sh"
+  behavior: ask
+  run_as_user: true

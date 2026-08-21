@@ -2,7 +2,7 @@ local theme = "default"
 local mainMod = "SUPER"
 
 return {
-    theme 	= theme,
+    theme       = theme,
     terminal    = "kitty",
     fileManager = "thunar",
     menu        = "hyprlauncher",
