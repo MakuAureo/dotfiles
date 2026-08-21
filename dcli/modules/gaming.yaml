@@ -1,0 +1,7 @@
+description: Gaming packages
+
+packages:
+  - lib32-vulkan-radeon
+  - steam
+  - flatpak:com.discordapp.Discord
+  - flatpak:com.heroicgameslauncher.hgl

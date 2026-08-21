@@ -39,6 +39,7 @@ packages:
   - iwd
   - less
   - libpulse
+  - lvm2
   - openssh
   - pipewire
   - pipewire-alsa

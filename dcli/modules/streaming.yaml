@@ -1,0 +1,4 @@
+description: Streaming packages
+
+packages:
+  - flatpak:com.obsproject.Studio
