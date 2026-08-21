@@ -4,7 +4,8 @@ hl.config({
         kb_variant = "abnt2",
 
         follow_mouse = 1,
-	accel_profile = "adaptive",
+        force_no_accel = true,
+        accel_profile = "adaptive",
 
         touchpad = {
             natural_scroll = true,
