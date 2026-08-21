@@ -1,5 +1,5 @@
 host: archmiku
-description: Laptop
+description: Example
 
 module_processing: parallel
 enabled_modules:

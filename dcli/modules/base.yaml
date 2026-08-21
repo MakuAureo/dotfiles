@@ -31,8 +31,6 @@ packages:
 
   # Basic tools
   - 7zip
-  - bluez
-  - bluez-utils
   - btop
   - ffmpeg
   - flatpak

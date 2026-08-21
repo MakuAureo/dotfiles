@@ -1,0 +1,5 @@
+description: Laptop modules
+
+packages:
+  - bluez
+  - bluez-utils

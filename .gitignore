@@ -1,3 +1,4 @@
 dcli/state
 dcli/.gitignore
+dcli/hosts/*.yaml
 nvim/lazy-lock.json
