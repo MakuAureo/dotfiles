@@ -25,7 +25,7 @@ Rectangle {
         }
 
         Text {
-            text: BatteryService.isPresent ? BatteryService.percentage + "%" : "No Battery"
+            text: BatteryService.isPresent ? BatteryService.percentage + "%" : ""
             color: "#cdd6f4"
             
             // ─── INHERITS GLOBAL FONT ───
