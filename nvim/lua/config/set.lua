@@ -3,6 +3,8 @@ vim.g.mapleader = " "
 vim.opt.number = true
 vim.opt.relativenumber = true
 
+vim.opt.wrap = false
+
 vim.opt.undofile = true
 vim.opt.undodir = vim.fn.expand("~/.local/state/nvim/undo")
 
@@ -31,3 +33,5 @@ vim.keymap.set("n", "gdi", function() vim.diagnostic.open_float() end, { desc = 
 
 vim.keymap.set("x", "<leader>p", [["_dP]], { desc = "Paste without overwriting register" })
 vim.keymap.set("v", "<leader>y", '"+y', { desc = "Copy to clipboard" })
+
+vim.keymap.set('n', '<leader>lf', function() vim.lsp.buf.format({ async = true }) end, { desc = 'Format current buffer' })
