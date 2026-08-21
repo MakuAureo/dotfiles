@@ -48,3 +48,5 @@ hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl play-pause"), { locked = tr
 hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = true })
 
 hl.bind(mainMod .. " + SHIFT + P", hl.dsp.exec_cmd("grim -g \"$(slurp)\" - | wl-copy"))
+
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("$HOME/.config/hyprlock/scripts/hyprlock.sh"))
