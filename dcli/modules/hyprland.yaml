@@ -15,5 +15,6 @@ packages:
   - sddm
   - slurp
   - xdg-desktop-portal-hyprland
+  - xdg-desktop-portal-gtk
   - xdg-utils
   - flatpak:app.zen_browser.zen

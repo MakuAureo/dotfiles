@@ -49,4 +49,4 @@ hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = tr
 
 hl.bind(mainMod .. " + SHIFT + P", hl.dsp.exec_cmd("grim -g \"$(slurp)\" - | wl-copy"))
 
-hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("$HOME/.config/hyprlock/scripts/hyprlock.sh"))
+hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd("$HOME/.config/hyprlock/scripts/hyprlock.sh"))

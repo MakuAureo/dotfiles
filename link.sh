@@ -2,6 +2,7 @@
 mkdir -p $HOME/Pictures/wallpapers
 mkdir -p $HOME/config
 
+rm -r $HOME/.themes
 rm -r $HOME/.config/dcli
 rm -r $HOME/.config/fish
 rm -r $HOME/.config/hypr
@@ -11,6 +12,7 @@ rm -r $HOME/.config/nvim
 rm -r $HOME/.config/quickshell
 rm -r $HOME/Pictures/wallpapers
 
+ln -s $PWD/.themes $HOME/.themes
 ln -s $PWD/dcli $HOME/.config/dcli
 ln -s $PWD/fish $HOME/.config/fish
 ln -s $PWD/hypr $HOME/.config/hypr
