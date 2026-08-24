@@ -10,9 +10,10 @@ hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + A", hl.dsp.exec_cmd(menu))
-hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
-hl.bind(mainMod .. " + O", hl.dsp.layout("togglesplit"))    -- dwindle only
+hl.bind(mainMod .. " + O", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + SHIFT + C", hl.dsp.window.kill())
+hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("wayfreeze --after-freeze-cmd `grim -g \"$(slurp)\" - | wl-copy`"))
+hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd("$HOME/.config/hyprlock/scripts/hyprlock.sh"))
 
 hl.bind(mainMod .. " + H", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + L", hl.dsp.focus({ direction = "right" }))
@@ -46,7 +47,3 @@ hl.bind("XF86AudioNext",  hl.dsp.exec_cmd("playerctl next"),       { locked = tr
 hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = true })
-
-hl.bind(mainMod .. " + SHIFT + P", hl.dsp.exec_cmd("grim -g \"$(slurp)\" - | wl-copy"))
-
-hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd("$HOME/.config/hyprlock/scripts/hyprlock.sh"))

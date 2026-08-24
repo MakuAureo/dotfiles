@@ -9,6 +9,7 @@ packages:
   - hyprlauncher
   - hyprlock
   - hyprpaper
+  - hyprpicker
   - kitty
   - qt5-wayland
   - qt6-wayland
@@ -17,4 +18,5 @@ packages:
   - xdg-desktop-portal-hyprland
   - xdg-desktop-portal-gtk
   - xdg-utils
+  - wayfreeze
   - flatpak:app.zen_browser.zen
