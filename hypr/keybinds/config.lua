@@ -12,7 +12,7 @@ hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + A", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + O", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + SHIFT + C", hl.dsp.window.kill())
-hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("wayfreeze --after-freeze-cmd `grim -g \"$(slurp)\" - | wl-copy`"))
+hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("wayfreeze --after-freeze-cmd 'grim -g \"$(slurp)\" - | wl-copy; killall wayfreeze'"))
 hl.bind(mainMod .. " + SHIFT + P", hl.dsp.exec_cmd("hyprpicker | wl-copy -n"))
 hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd("$HOME/.config/hyprlock/scripts/hyprlock.sh"))
 
