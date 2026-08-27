@@ -1,5 +1,7 @@
 vim.g.mapleader = " "
 
+vim.g.astro_typescript = 'enable'
+
 vim.opt.number = true
 vim.opt.relativenumber = true
 
