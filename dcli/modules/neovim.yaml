@@ -4,8 +4,10 @@ packages:
   - neovim
   - tree-sitter-cli
 
+  # LSPs
   - biome
   - clang
   - lua-language-server
   - qt6-declarative
   - gopls
+  - vscode-html-languageserver
