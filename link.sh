@@ -4,6 +4,7 @@ mkdir -p $HOME/config
 
 rm -r $HOME/.themes
 rm -r $HOME/.config/dcli
+rm -r $HOME/.config/dunst
 rm -r $HOME/.config/fish
 rm -r $HOME/.config/hypr
 rm -r $HOME/.config/hyprlock
@@ -14,6 +15,7 @@ rm -r $HOME/Pictures/wallpapers
 
 ln -s $PWD/.themes $HOME/.themes
 ln -s $PWD/dcli $HOME/.config/dcli
+ln -s $PWD/dunst $HOME/.config/dunst
 ln -s $PWD/fish $HOME/.config/fish
 ln -s $PWD/hypr $HOME/.config/hypr
 ln -s $PWD/hyprlock $HOME/.config/hyprlock

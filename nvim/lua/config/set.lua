@@ -41,3 +41,6 @@ vim.keymap.set("x", "<leader>p", [["_dP]], { desc = "Paste without overwriting r
 vim.keymap.set("v", "<leader>y", '"+y', { desc = "Copy to clipboard" })
 
 vim.keymap.set('n', '<leader>lf', function() vim.lsp.buf.format({ async = true }) end, { desc = 'Format current buffer' })
+
+vim.keymap.set("n", "<leader>c", "gcc", { remap = true, desc = "Toggle line comment" })
+vim.keymap.set("v", "<leader>c", "gc", { remap = true, desc = "Toggle selection comment" })
