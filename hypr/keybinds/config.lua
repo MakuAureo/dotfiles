@@ -14,7 +14,13 @@ hl.bind(mainMod .. " + O", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + SHIFT + C", hl.dsp.window.kill())
 hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("wayfreeze --after-freeze-cmd 'grim -g \"$(slurp)\" - | wl-copy; killall wayfreeze'"))
 hl.bind(mainMod .. " + SHIFT + P", hl.dsp.exec_cmd("hyprpicker | wl-copy -n"))
-hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd("$HOME/.config/hyprlock/scripts/hyprlock.sh"))
+
+hl.bind(mainMod .. " + Y", hl.dsp.exec_cmd("shutdown && hyprctl notify 1 60000 0 \"Shutting down in 60s, press 'SUPER + ALT + Y' to cancel or 'SUPER + SHIFT + Y' to skip the countdown\""))
+hl.bind(mainMod .. " + SHIFT + Y", hl.dsp.exec_cmd("poweroff"))
+hl.bind(mainMod .. " + ALT + Y", hl.dsp.exec_cmd("shutdown -c && hyprctl dismissnotify && hyprctl notify 1 5000 0 \"Shutdown canceled\""))
+
+hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("$HOME/.config/hyprlock/scripts/hyprlock.sh"))
+hl.bind(mainMod .. " + SHIFT + N", hl.dsp.exec_cmd("$HOME/.config/hyprlock/scripts/hyprlock.sh & sleep 0.2 && systemctl suspend"))
 
 hl.bind(mainMod .. " + H", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + L", hl.dsp.focus({ direction = "right" }))
