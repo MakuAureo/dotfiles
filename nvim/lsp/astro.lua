@@ -1,4 +1,3 @@
----@type vim.lsp.Config
 return {
     cmd = function(dispatchers, config)
         local cmd = 'astro-ls'

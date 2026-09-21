@@ -1,0 +1,5 @@
+description: Lethal Modding
+
+packages:
+  - dotnet-sdk
+  - unityhub

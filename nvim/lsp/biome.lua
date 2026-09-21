@@ -1,4 +1,3 @@
----@param init_result ClangdInitializeResult
 return {
   cmd = function(dispatchers, config)
     local cmd = 'biome'

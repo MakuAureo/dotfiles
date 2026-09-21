@@ -1,0 +1,7 @@
+description: Docker
+
+packages:
+  - docker
+  - docker-buildx
+  - docker-compose
+  - ducker
