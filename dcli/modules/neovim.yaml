@@ -2,6 +2,7 @@ description: Neovim packages
 
 packages:
   - neovim
+  - typst
   - tree-sitter-cli
 
   # LSPs

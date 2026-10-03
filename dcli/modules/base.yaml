@@ -34,7 +34,8 @@ packages:
   - btop
   - ffmpeg
   - flatpak
-  - fuse
+  - filelight
+  - fuse2
   - git
   - gst-plugin-pipewire
   - iwd
