@@ -2,3 +2,5 @@ description: VPN
 
 packages:
   - openvpn
+  - openresolv
+  - openvpn-update-resolv-conf-git
