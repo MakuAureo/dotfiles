@@ -17,6 +17,8 @@ vim.opt.expandtab = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 0
 vim.opt.scrolloff = 8
+vim.opt.autoindent = true
+vim.opt.smartindent = true
 
 vim.opt.autocomplete = true
 vim.opt.completeopt = { "menu", "menuone", "noselect", "popup" }
@@ -24,6 +26,7 @@ vim.opt.complete = ".,w,b,u"
 vim.opt.autocompletedelay = 250
 
 vim.opt.hlsearch = false
+vim.opt.smartcase = true
 
 vim.keymap.set("n", "<leader>vs", "<Cmd>vsplit<CR>", { desc = "Open vertical split" })
 vim.keymap.set("n", "<leader>ss", "<Cmd>split<CR>", { desc = "Open horizontal split" })

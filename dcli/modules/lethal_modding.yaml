@@ -3,3 +3,4 @@ description: Lethal Modding
 packages:
   - dotnet-sdk
   - unityhub
+  - libxml2-legacy
